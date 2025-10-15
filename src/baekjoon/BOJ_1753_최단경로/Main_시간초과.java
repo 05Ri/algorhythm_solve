@@ -7,11 +7,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-class Node {
+class Node1 {
     int nextNodeNum;
     int distance;
 
-    public Node(int nextNodeNum, int distance) {
+    public Node1(int nextNodeNum, int distance) {
         this.nextNodeNum = nextNodeNum;
         this.distance = distance;
     }
@@ -21,7 +21,7 @@ public class Main_시간초과 {
     // 시작점으로부터 다른 노드의 최단 거리를 저장할 배열
     public static int[] shortestDistanceArr;
     // 노드의 연결을 담을 배열
-    public static List<Node>[] graph;
+    public static List<Node1>[] graph;
     // 시작 노드 번호
     public static int K;
     // 짧은 거리들의 배열
@@ -38,7 +38,7 @@ public class Main_시간초과 {
         // 그래프 초기화
         graph = new ArrayList[V + 1];
         for (int i = 0; i <= V; i++) {
-            graph[i] = new ArrayList<Node>();
+            graph[i] = new ArrayList<Node1>();
         }
 
         // 최소거리 배열 초기화
@@ -62,7 +62,7 @@ public class Main_시간초과 {
             int distance = Integer.parseInt(st.nextToken());
 
             // 그래프에 간선 추가
-            graph[currNode].add(new Node(nextNode, distance));
+            graph[currNode].add(new Node1(nextNode, distance));
         }
 
         // 가장 짧은 거리 노드 배열 초기화
@@ -109,7 +109,7 @@ public class Main_시간초과 {
         // 만약 값을 갱신하지 못했다면 더 탐색하는 것이 의미가 없으므로 리턴
         if (minDistance == minDistanceArr[nodeNum]) return;
         
-        for (Node node : graph[nodeNum]) {
+        for (Node1 node : graph[nodeNum]) {
             // 다음 탐색
             dfs(node.nextNodeNum, distance + node.distance);
         }
