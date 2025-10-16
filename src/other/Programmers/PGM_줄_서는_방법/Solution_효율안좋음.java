@@ -1,4 +1,4 @@
-package other.Programmers.줄_서는_방법;
+package other.Programmers.PGM_줄_서는_방법;
 
 import java.util.ArrayList;
 import java.util.Arrays;
