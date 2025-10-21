@@ -29,5 +29,6 @@ public class Solution {
 			avg = Math.round(avg);
 			System.out.printf("#%d %d\n", t, (int) avg);
 		}
+		sc.close();
 	}
 }

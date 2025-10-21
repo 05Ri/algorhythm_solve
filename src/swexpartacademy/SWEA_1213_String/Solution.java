@@ -82,5 +82,6 @@ public class Solution {
 			}
 			System.out.printf("#%d %d\n", t, searchComplete);
 		}
+		sc.close();
 	}
 }

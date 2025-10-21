@@ -3,7 +3,6 @@ package swexpartacademy.SWEA_2112_보호_필름;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 // 아직 해결 못함

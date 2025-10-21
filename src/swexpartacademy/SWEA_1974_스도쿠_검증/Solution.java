@@ -66,5 +66,6 @@ public class Solution {
 
 			System.out.println("#" + test_case + " " + check);
 		}
+		sc.close();
 	}
 }

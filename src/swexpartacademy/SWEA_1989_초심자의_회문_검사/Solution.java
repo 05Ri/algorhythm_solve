@@ -28,5 +28,6 @@ public class Solution {
 			// 전부 일치하면
 			System.out.printf("#%d 1\n", t);
 		}
+		sc.close();
 	}
 }

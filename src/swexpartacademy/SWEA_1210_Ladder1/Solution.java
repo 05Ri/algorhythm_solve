@@ -67,5 +67,6 @@ public class Solution {
 			// y가 0이 되었으니 x의 출발 지점을 알 수 있다.
 			System.out.printf("#%d %d\n", t, xPoint);
 		}
+		sc.close();
 	}
 }

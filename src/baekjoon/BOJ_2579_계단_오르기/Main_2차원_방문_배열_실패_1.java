@@ -3,7 +3,6 @@ package baekjoon.BOJ_2579_계단_오르기;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class Main_2차원_방문_배열_실패_1 {
 	public static int[] stairs;

@@ -3,7 +3,6 @@ package baekjoon.BOJ_11004_K번째_수;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Main_퀵정렬 {

@@ -1,7 +1,6 @@
 package swexpartacademy.SWEA_2063_중간값_찾기;
 
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class Solution_선택정렬 {
 	public static void main(String[] args) {
@@ -31,5 +30,6 @@ public class Solution_선택정렬 {
 		}
 		
 		System.out.println(arr[n / 2]);
+		sc.close();
 	}
 }

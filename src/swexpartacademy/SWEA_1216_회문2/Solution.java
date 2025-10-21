@@ -57,7 +57,8 @@ public class Solution {
 			// 출력
 			System.out.printf("#%d %d\n", tc, cnt);
 		}
-
+		
+		sc.close();
 	}
 
 	// 가로 문자열 팰린드롬의 최대 길이를 알려줄 메소드

@@ -32,5 +32,6 @@ public class Solution {
 			
 			System.out.printf("#%d %d\n", t, sum);
 		}
+		sc.close();
 	}
 }

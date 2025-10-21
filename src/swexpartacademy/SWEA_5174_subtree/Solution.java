@@ -1,8 +1,5 @@
 package swexpartacademy.SWEA_5174_subtree;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Solution {
@@ -56,6 +53,7 @@ public class Solution {
 			dfs(rootNode);
 
 			System.out.printf("#%d %d\n", t, cnt);
+			sc.close();
 		}
 	}
 

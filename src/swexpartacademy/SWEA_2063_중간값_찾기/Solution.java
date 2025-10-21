@@ -16,5 +16,6 @@ public class Solution {
 		Arrays.sort(score);
 
 		System.out.println(score[(int) N / 2]);
+		sc.close();
 	}
 }

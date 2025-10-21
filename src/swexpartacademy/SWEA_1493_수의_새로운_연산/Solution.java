@@ -71,5 +71,6 @@ public class Solution {
 
 			System.out.printf("#%d %d\n", t, plane[x][y]);
 		}
+		sc.close();
 	}
 }

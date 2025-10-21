@@ -22,5 +22,6 @@ public class Solution {
 			
 			System.out.println("#" + i + " " + total);
 		}
+		sc.close();
 	}
 }

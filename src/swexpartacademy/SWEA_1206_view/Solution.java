@@ -28,5 +28,6 @@ public class Solution {
 			}
 			System.out.printf("#%d %d\n", t, cnt);
 		}
+		sc.close();
 	}
 }

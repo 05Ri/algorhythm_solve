@@ -3,7 +3,6 @@ package swexpartacademy.SWEA_4008_숫자_만들기;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Solution {

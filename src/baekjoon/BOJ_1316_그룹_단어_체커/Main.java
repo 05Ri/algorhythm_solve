@@ -47,5 +47,6 @@ public class Main {
 		}
 
 		System.out.println(cnt);
+		sc.close();
 	}
 }

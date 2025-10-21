@@ -65,5 +65,6 @@ public class Solution {
 			}
 			System.out.printf("#%d %d\n", t, num.pop());
 		}
+		sc.close();
 	}
 }

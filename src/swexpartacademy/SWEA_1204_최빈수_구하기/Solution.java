@@ -43,5 +43,6 @@ public class Solution {
             highFreqNum = 0;
             highCount = 0;
         }
+		sc.close();
 	}
 }

@@ -16,5 +16,6 @@ public class Solution {
         }
  
         System.out.println(tot);
+        sc.close();
 	}
 }

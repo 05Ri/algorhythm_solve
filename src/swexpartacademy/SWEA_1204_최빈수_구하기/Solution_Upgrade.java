@@ -3,8 +3,6 @@ package swexpartacademy.SWEA_1204_최빈수_구하기;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class Solution_Upgrade {

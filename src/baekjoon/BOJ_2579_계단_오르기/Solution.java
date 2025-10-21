@@ -3,7 +3,6 @@ package baekjoon.BOJ_2579_계단_오르기;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class Solution {
 	public static int N;

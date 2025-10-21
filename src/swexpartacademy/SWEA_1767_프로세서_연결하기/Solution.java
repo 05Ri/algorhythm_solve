@@ -3,7 +3,6 @@ package swexpartacademy.SWEA_1767_프로세서_연결하기;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Solution {
