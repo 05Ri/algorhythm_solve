@@ -1,52 +1,42 @@
 package baekjoon.BOJ_1316_그룹_단어_체커;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Main {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+	static boolean[] alpha;	// 알파뱃 방문체크
 
-		int wordNum = sc.nextInt(); // 단어 개수 입력 받기
-		String word = new String();
-		// 알파벳 소문자 길이만큼 크기 할당, 알파벳 중복 검사 배열
-		char[] alphaCheck = new char[26];
-		int cnt = wordNum; // 일단 전부 그룹단어라고 가정해준다.
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		int N = Integer.parseInt(br.readLine());	// 단어 개수
+		int cnt = 0;	// 카운팅
 
-		for (int w = 0; w < wordNum; w++) {
-			word = sc.next();
+		for (int n = 0; n < N; n++) {
+			String str = br.readLine();
+			alpha = new boolean[26];
 
-			// 검사 배열 초기화
-			for (int i = 0; i < alphaCheck.length; i++) {
-				alphaCheck[i] = '0';
-			}
-
-			char[] wordChar = word.toCharArray();
-
-			int chkCnt = 0; // 검사 배열의 인덱스
-			// 현 글자와 전 글자가 같지 않으면 검사 배열에 전 글자를 추가해준다.
-			for (int i = 1; i < wordChar.length; i++) {
-				if (wordChar[i] != wordChar[i - 1]) {
-					alphaCheck[chkCnt++] = wordChar[i - 1];
-				}
-			}
-
-			if (wordChar[wordChar.length - 1] != wordChar[wordChar.length - 2])
-				alphaCheck[chkCnt] = wordChar[wordChar.length - 1]; // 마지막 글자도 비교하여 추가해준다.
-
-			for (int i = 0; i < alphaCheck.length; i++) {
-				System.out.print(alphaCheck[i] + " ");
-			}
-			System.out.println();
-
-			for (int i = 1; i < alphaCheck.length && alphaCheck[i] == '0'; i++) {
-				if (alphaCheck[i] == alphaCheck[i - 1]) {
-					cnt--;
-					break;
-				}
+			if(checking(str.toCharArray())) {
+				cnt++;
 			}
 		}
 
 		System.out.println(cnt);
-		sc.close();
+	}
+
+	static boolean checking(char[] charArray) {
+		for (int i = 1; i < charArray.length; i++) {
+			// 현재와 전이 같다면 다음 순서로 건너뛰기
+			if (charArray[i - 1] == charArray[i]) continue;
+			
+			// 알파벳이 쓰였는지 확인 후 쓰였다면 false 리턴
+			if (alpha[charArray[i] - 'a']) return false;
+
+			// 전에 쓰인 알파벳을 썼다고 체크해주기
+			alpha[charArray[i - 1] - 'a'] = true;
+		}
+		
+		return true;
 	}
 }
