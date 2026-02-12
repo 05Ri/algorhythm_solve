@@ -13,12 +13,11 @@ public class Main {
         .append("     |     |\n")
         .append("     |     |\n")
         .append("     |     |\n")
-        .append("     |     |\n")
         .append("     |_____|\n")
         .append("  __/       \\__\n")
         .append(" /             \\\n")
         .append("/_______________\\");
 
-        System.out.println(sb.toString());
+        System.out.print(sb.toString());
     }
 }
